@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-primary: "Archivo", sans-serif;
+    --dark-10: #121214;
+    --dark-20: #F3F7FF;
+    --dark-30: #FFFFFF;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-centro{
+    width: 67%;
+}
+
+.centraliza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6.5rem;
+    
+}
+
+header h2{
+    font-family: var(--font-primary);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+section.introducao{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../img/09b1a20191a57e504bf41c599dbaca80.png") no-repeat;
+    background-position: 0% 11.5%;
+    background-size: cover;
+    height: 31.2rem;
+    color: white;
+    
+    
+}
+
+.content-introducao{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: var(--font-primary);
+    height: 100%;
+    padding: 7rem 0;
+}
+
+.title-introducao{
+    display: flex;
+    align-items: center;
+}
+
+.title-introducao h1{
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.introducao-introducao{
+    width: 38rem;
+}
+
+.introducao-introducao h2{
+    font-size: 2.9rem;
+    font-weight: 300;
+}
+.introducao-introducao p{
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    font-weight: 300;
+}
