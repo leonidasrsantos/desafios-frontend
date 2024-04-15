@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --font-global:"Roboto", sans-serif;
+    --brand-color: #846AFF;
+    --button-hover-color: #846ACF;
+    --dark-10: #121214;
+    --dark-20: #7C7C8A;
+    --dark-30: #EAEAEA;
+    --dark-40: #EEEEFF;
+    --dark-50: #F8F8FF;
+    --dark-60: #FFFFFF;
+}
+
+
+
+html{
+    font-family: var(--font-global);
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 20rem;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.responsivo-centro{
+    width: 60%;
+}
+
+/*Estilização Header*/
+.header{
+    background-color: var(--dark-50);
+    padding: 4rem 0;
+    
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content-text h1{
+    font-size: 3rem;
+    text-align: left;
+    padding-bottom: 2.5rem;
+}
+
+.header-content-text h1 span{
+    color: var(--brand-color);
+}
+
+.header-content-text p{
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.header-content-text button{
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--dark-40);
+    background-color: var(--brand-color);
+    font-weight: bold;
+    width: 17rem;
+    height: 4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-content-text button:hover{
+    background-color: var(--button-hover-color);
+}
+
+.header-content-img img{
+    width: 30rem;
+}
+
+/*Estilização dos aritgos*/
+
+.artigo{
+    background-color: var();
+    padding: 8rem 0;
+}
+
+.artigo-body h2{
+    font-size: 2.2rem;
+    padding-bottom:6rem ;
+}
+
+.artigo-body ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.artigo-body li{
+    width: 29rem;
+    background-color: var(--dark-60);
+    border: 0.2rem solid var(--dark-40);
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    padding-bottom: 1rem;
+}
+
+.artigo-body li div:nth-child(1){
+    width: 29rem;
+    height: 13rem;
+}
+.artigo-body li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artigo-body li div:nth-child(2){
+    padding: 1.5rem;
+}
+
+.artigo-body li h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.artigo-body li p {
+    font-size: 1.4rem;
+}
+
+section.form{
+    background-color: var(--dark-40);
+    padding: 3rem 0;
+}
+
+section.form h2{
+    font-size: 2.4rem;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+    padding: 4rem 0;
+}
+
+section.form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-input-rodape{
+    width: 35rem;
+    height: 3rem;
+    border: 0.1rem solid var(--dark-30);
+    padding:  1rem;
+    border-radius: 0.2rem;
+}
+
+.form textarea{
+    height: 10rem;
+    resize: none;
+}
+
+.form input:nth-child(4){
+    background-color: var(--brand-color);
+    color: var(--dark-60);
+    font-weight: bold;
+    font-size: 1.6rem;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.form input:nth-child(4):hover{
+    background-color: var(--button-hover-color);
+}
